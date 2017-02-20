@@ -1,3 +1,4 @@
+
 ####Grid-pp LOFAR downloader####
 ####D.D.Mulcahy 20.02.2017#####
 ####To download data, already staged,
@@ -26,8 +27,7 @@ for i in range(lines):
     tarname = glob.glob('*.tar')[0]
     outname = tarname.split("%")[-1]
     os.rename(tarname, outname)
-    os.system('rm -rf html_temp.txt')
+    os.system('rm html_temp.txt')
     os.system('dirac-dms-add-file /skatelescope.eu/user/m/david.mulcahy/tmp/'+str(outname)+' '+str(outname)+' UKI-NORTHGRID-MAN-HEP-disk')
-    os.system('rm -rf html_temp.txt')
-
+    os.system('rm '+outname)
 original_list.close()
