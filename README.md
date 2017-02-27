@@ -1,10 +1,10 @@
-## Scripts for reducing LOFAR data on Grid-pp 
+# Scripts for reducing LOFAR data on Grid-pp 
 
 The follow depository conatins scripts for the purpose of reducing LOFAR data on Grid-pp
 
 Scripts will be added on ongoing basis.
 
-#downloadlofardata.py
+## downloadlofardata.py
 
 This short script allows the user to download already staged data from the LOFAR long term archive (lta) to the user interface and then move that data to the grid via dirac.
 
